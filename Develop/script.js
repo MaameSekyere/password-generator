@@ -1,5 +1,19 @@
 // Assignment code here
 
+// Password varaible and objects
+var passwordCharacters = {
+  numberLength: 8,
+  space: "",
+  reset: function () {
+    (this.space = ""), (numberLength = 8);
+  },
+};
+
+
+
+
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
