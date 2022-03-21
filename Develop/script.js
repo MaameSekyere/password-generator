@@ -100,6 +100,66 @@ var generateRandomPassword = function () {
   console.log(passwordCharacters.value.length);
 };
 
+// Lowercase letter option
+var lowerCase = function() {
+  var lowercaseLetter = window.prompt("Are there any lowercase letters in your password? Choose 'yes' or 'no'.");
+    if (lowercaseLetter === "" || lowercaseLetter === null) {
+      window.alert("Empty search bar. Try again");
+      lowercaseLetter = window.prompt("Would you like to use lowercase? Choose 'yes' or 'no'.");
+    } else {
+      lowercaseLetter = lowercaseLetter.toLowerCase();
+    }
+};
+
+// Uppercase letter option
+var upperCase = function() {
+  var uppercaseLetter = window.prompt(
+    "Are there any uppercase letters in your password? Choose 'yes' or 'no'."
+  );
+    if (uppercaseLetter === "" || uppercaseLetter === null) {
+      window.alert("Empty search bar. Try again");
+      upperCase();
+    } else {
+      uppercaseLetter = uppercaseLetter.toLowerCase();
+    }
+};
+
+// Numeric Function
+var numericFunction = function() {
+  var numericChoice = window.prompt("Would you like to use numbers? Choose 'yes' or 'no'.");
+    if (numericChoice === "" || numericChoice === null) {
+      window.alert("Fields left empty. Please try again");
+      numericFunction();
+    } else {
+      numericChoice = numericChoice.toLowerCase();
+
+      switch (numericChoice) {
+        case 'yes':
+          passwordInfo.characters = passwordInfo.characters.concat(passwordChoices.numeric);
+          break;
+        case 'no':
+          break;
+        default: 
+          window.alert("Please make a valid selection. Try again.");
+          numericFunction();
+      }
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
