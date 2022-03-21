@@ -39,7 +39,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ## link
 
-https://github.com/MaameSekyere/password-generator
+https://maamesekyere.github.io/password-generator/
 
 ## Contribution
 
