@@ -71,6 +71,35 @@ var passwordSelection = {
   numeric: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 };
 
+// Length of password function
+var passwordLengthCheck = function () {
+  var passwordLength = window.prompt(
+    "Please specify number of characters from 8 to 20."
+  );
+  if (passwordLength === "" || passwordLength === null) {
+    window.alert("Please try again, search bar is empty.");
+    passwordLengthCheck();
+  }
+};
+
+if (passwordLength >= 8 && passwordLength <= 20) {
+  passwordCharacters.numberLength = passwordLength;
+} else {
+  window.alert("Please enter a number between 8 and 20!");
+  passwordLengthCheck();
+}
+console.log(passwordLength);
+
+// Generate random number
+var generateRandomPassword = function () {
+  for (var n = 0; n < passwordCharacters.numberLength; n++) {
+    var randomPassword = Math.floor(Math.random() * passwordCharacters.length);
+    passwordCharacters.value += passwordCharacters.randomPassword;
+  }
+  console.log(passwordCharacters.value);
+  console.log(passwordCharacters.value.length);
+};
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
