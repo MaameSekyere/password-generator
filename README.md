@@ -1,20 +1,26 @@
 # Password Generator Starter Code
+
 ## Description
-The purpose of this application to allow users to generate a random password based on 
+
+The purpose of this application to allow users to generate a random password based on
 specific criteria.
 
 ## Applications Used
+
 HTML, CSS, Advanced CSS, JavaScript
 
 ## Usage
+
 This password generator will enable the user to create a secure password that will be 8-128 characters long, and can contain uppercase and/or lowercase letter and/or numbers and/or special characters.
 
 ## User Story
+
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
 
 ## Acceptance Criteria
+
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
@@ -31,5 +37,10 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
+## link
+
+https://github.com/MaameSekyere/password-generator
+
 ## Contribution
+
 W3 schools, MDN
