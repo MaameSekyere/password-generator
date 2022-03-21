@@ -27,11 +27,11 @@ var lowerCase = [
   "t",
   "u",
   "v",
-  "w",
-  "x",
-  "y",
+  "X",
+  "Y",
   "z",
 ];
+
 var upperCase = [
   "A",
   "B",
@@ -55,11 +55,11 @@ var upperCase = [
   "T",
   "U",
   "V",
-  "W",
   "X",
   "Y",
   "Z",
 ];
+
 var specialSymbol = ["!", "@", "#", "$", "%", "*", "&"];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
@@ -68,7 +68,7 @@ function alertUser() {
   characters = [];
 
   numberLength = parseInt(
-    alert("Select a number between 8 to 128 for password length")
+    prompt("Select a number between 8 to 128 for password length")
   );
   if (isNaN(numberLength) || numberLength < 8 || numberLength > 128) {
     alert("Select a number between 8 to 128 for password length");
@@ -104,9 +104,9 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  var alertUser = alertUser();
+  var createAlerts = alertUser();
   var passwordText = document.querySelector("#password");
-  if (alertUser) {
+  if (createAlerts) {
     var getPassword = generatePassword();
     passwordText.value = getPassword;
   } else {
